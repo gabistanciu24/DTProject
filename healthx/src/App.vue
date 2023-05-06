@@ -7,7 +7,7 @@
           <input type="text" id="username" name="username" placeholder="User">
           <input type="password" id="password" name="password" placeholder="password">
           <button>Signup</button>
-          <a href="#">Already a member?</a>
+          <a href="./components/LoginPage.vue">Already a member?</a>
         </div>
         <div class="right">
           <span class="gender">
@@ -67,7 +67,7 @@
 export default {
   name: 'App',
   components: {
-    
+
   }
 }
 </script>
