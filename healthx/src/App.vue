@@ -10,6 +10,9 @@ export default {
   methods:{
     redirecttoLogin(){
       this.$router.push('login');
+    },
+    redirecttoSignup(){
+      this.$router.push('/');
     }
   }
 }
