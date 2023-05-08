@@ -8,6 +8,7 @@
               <input type="password" id="password" name="password" placeholder="password">
               <button>Signup</button>
               <a href="#" @click="redirecttoLogin">Already a member?</a>
+              <a href="#" @click="redirecttoAddFood">Temporary AddFood Link</a>
             </div>
             <div class="right">
               <span class="gender">
@@ -70,6 +71,9 @@
     methods:{
       redirecttoLogin(){
         this.$router.push('login');
+      },
+      redirecttoAddFood(){
+        this.$router.push('addfood');
       }
     }
   }
