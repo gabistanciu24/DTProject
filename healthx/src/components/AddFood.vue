@@ -14,12 +14,12 @@
       <div class="form-wrapper">
         <form>
           <input type="text" id="foodname" name="foodname" placeholder="Food name">
-          <input type="text" id="protein" name="protein" placeholder="Protein">
-          <input type="text" id="carbs" name="carbs" placeholder="Carbohydrates">
-          <input type="text" id="fat" name="fat" placeholder="Fat">
-          <input type="text" id="calories" name="calories" placeholder="Calories">
-          <input type="text" id="grams" name="grams" placeholder="Grams">
-          <button class="addfoodbutton">Add food</button>
+          <input type="number" id="protein" name="protein" placeholder="Protein">
+          <input type="number" id="carbs" name="carbs" placeholder="Carbohydrates">
+          <input type="number" id="fat" name="fat" placeholder="Fat">
+          <input type="number" id="calories" name="calories" placeholder="Calories">
+          <input type="number" id="grams" name="grams" placeholder="Grams">
+          <button class="addfoodbutton" >Add food</button>
         </form>
       </div>
     </div>
@@ -57,6 +57,7 @@ export default {
   background-color: #9CA777;
   color:white;
   height: 4rem;
+  width:93%;
 }
 
 #diaryfood::placeholder{
@@ -74,7 +75,7 @@ export default {
   margin-right:2.5rem;
 }
 
-.table-wrapper-footer > input[type=number]{
+.table-wrapper-footer > #quantity{
   width: 44%;
   margin-left:2.5rem;
 }
@@ -86,7 +87,7 @@ export default {
   margin-bottom:2rem;
 }
 
-.addfoodform > input[type=number],input[type=text]{
+.addfoodform #foodname,#protein,#carbs,#fat,#calories,#grams{
   width:93%;
   height: 4rem;
   margin:2rem 2rem;
