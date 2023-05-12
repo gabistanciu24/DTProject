@@ -9,6 +9,7 @@
               <button>Signup</button>
               <a href="#" @click="redirecttoLogin">Already a member?</a>
               <a href="#" @click="redirecttoAddFood">Temporary AddFood Link</a>
+              <a href="#" @click="redirecttoShowData">Temporary ShowData Link</a>
             </div>
             <div class="right">
               <span class="gender">
@@ -74,6 +75,9 @@
       },
       redirecttoAddFood(){
         this.$router.push('addfood');
+      },
+      redirecttoShowData(){
+        this.$router.push('showdata');
       }
     }
   }
